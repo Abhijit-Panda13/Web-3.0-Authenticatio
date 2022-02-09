@@ -2,11 +2,13 @@ import React from "react";
 import { useState, useEffect } from "react";
 import OpenLogin from "@toruslabs/openlogin";
 import Button from 'react-bootstrap/Button';
-import "./app.css";
-import { getValue } from "@testing-library/user-event/dist/utils";
+import "./app.css"; 
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 import Container from "react-bootstrap/Container";
 import validator from 'validator';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { MDBInput } from 'mdb-react-ui-kit';
 
 const VERIFIER = [
   {
@@ -23,7 +25,6 @@ const VERIFIER = [
 function App() {
   const [isLoading, setLoading] = useState(true);
   const [email, setEmail] = useState('');
-  const classes = useStyles();
   const [formIsValid, setFormIsValid] = useState(false);
   const [openlogin, setOpenLogin] = useState();
   const [privKey, setPrivKey] = useState();
@@ -126,6 +127,9 @@ function App() {
   ) : (<div className="central">
       <Container fluid >
         <Row>
+          
+        </Row>
+        <Row>
           <Col sm={4}></Col>
           <Col sm = {4}>
           <form noValidate>
@@ -145,16 +149,11 @@ function App() {
               Login
           </Button>
           </form>
-          <Box mt={8}>
-          <Copyright />
-        </Box>
         </Col>
       </Row>
-      <Row>
-        <Col sm={5}></Col>
-        <Col sm={2}><Button variant="outline-dark" id="0" onClick={onLoginBrand}>Google <FaGoogle /></Button></Col>
-        <Col sm={2}><Button variant="outline-dark" id="1" onClick={onLoginBrand}>Facebook <FaFacebook /></Button></Col>
-      </Row>
+      
+        <Button className="fg .hover-zoom" variant="outline-dark" id="0" onClick={onLoginBrand}>Google <FaGoogle /></Button>
+        <Button className="fg .hover-zoom" variant="outline-dark" id="1" onClick={onLoginBrand}>Facebook <FaFacebook /></Button>
     </Container>
     </div> );
 }

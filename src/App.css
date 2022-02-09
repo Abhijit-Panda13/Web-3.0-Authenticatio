@@ -6,3 +6,13 @@
 button{
     margin: 1rem !important;
 }
+.fg:hover{
+    color: white !important;
+    background-color: black !important;
+    font-size: 0.9rem !important;
+}
+.fg{
+    width: 9rem !important;
+    height: 2.5rem !important;
+    font-size: 0.8rem !important;
+}

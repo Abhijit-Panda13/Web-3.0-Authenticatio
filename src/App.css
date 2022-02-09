@@ -1,7 +1,8 @@
 .central{
     position: relative;
     text-align: center;
-    top: 15rem;
+    top: 10rem;
+    
 }
 button{
     margin: 1rem !important;
@@ -15,4 +16,7 @@ button{
     width: 9rem !important;
     height: 2.5rem !important;
     font-size: 0.8rem !important;
+}
+.head{
+    margin-bottom: 3rem !important;
 }

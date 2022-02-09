@@ -28,11 +28,12 @@ function App() {
   const [formIsValid, setFormIsValid] = useState(false);
   const [openlogin, setOpenLogin] = useState();
   const [privKey, setPrivKey] = useState();
+  const [OpenloginUserInfo, setOpenloginUserInfo] = useState();
 
   var loginObject ={
     loginProvider: "google",
     clientId: "BDEZMlXEtCPU0_sfOO22To8ZnFS8ppSJs_yBNBxiMWhdAmPJSUk4jlCI3ykKBHO2cl1iDEu_M6UDVFAqALmZPto",
-    redirectUrl: "http://localhost:3000/redirect"
+    redirectUrl: "http://localhost:3000/"
   }
 
   useEffect(() => {
@@ -86,7 +87,7 @@ function App() {
           login_hint: email,
         },
         loginProvider: "email_passwordless",
-        redirectUrl: "http://localhost:7005/",
+        redirectUrl: "http://localhost:3000/",
     });
     
     setPrivKey(openlogin.privKey);
@@ -111,7 +112,7 @@ function App() {
     //   redirectUrl: "http://localhost:3000/redirect",
     // }
   
-
+  
   useEffect(() => {
     onMount();
     
@@ -121,13 +122,17 @@ function App() {
   return privKey ? 
   (
     <div className="central">
-      <p>Logged in: {privKey}</p>
+      <h1>Welcome {OpenloginUserInfo}</h1>
+      <p>Logged in with private key: {privKey}</p>
+      <p>Store the private key generated in localStorage</p>
+      <p>Then you can now use the private key for authentication across different pages</p>
       <Button  variant="outline-dark" onClick={onLogout}>Logout</Button>
     </div>
-  ) : (<div className="central">
+  ) : (
+    <div className="central">
       <Container fluid >
-        <Row>
-          
+        <Row className="head">
+          <h1 className="neon">Passwordless Login</h1>
         </Row>
         <Row>
           <Col sm={4}></Col>

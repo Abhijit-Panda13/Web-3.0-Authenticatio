@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Web-3.0-Authentication/static/css/main.091b867f.chunk.css",
+    "main.js": "/Web-3.0-Authentication/static/js/main.1b0cc07e.chunk.js",
+    "main.js.map": "/Web-3.0-Authentication/static/js/main.1b0cc07e.chunk.js.map",
+    "runtime-main.js": "/Web-3.0-Authentication/static/js/runtime-main.145ce1dc.js",
+    "runtime-main.js.map": "/Web-3.0-Authentication/static/js/runtime-main.145ce1dc.js.map",
+    "static/css/2.070ffd8c.chunk.css": "/Web-3.0-Authentication/static/css/2.070ffd8c.chunk.css",
+    "static/js/2.473420e6.chunk.js": "/Web-3.0-Authentication/static/js/2.473420e6.chunk.js",
+    "static/js/2.473420e6.chunk.js.map": "/Web-3.0-Authentication/static/js/2.473420e6.chunk.js.map",
+    "index.html": "/Web-3.0-Authentication/index.html",
+    "static/css/2.070ffd8c.chunk.css.map": "/Web-3.0-Authentication/static/css/2.070ffd8c.chunk.css.map",
+    "static/css/main.091b867f.chunk.css.map": "/Web-3.0-Authentication/static/css/main.091b867f.chunk.css.map",
+    "static/js/2.473420e6.chunk.js.LICENSE.txt": "/Web-3.0-Authentication/static/js/2.473420e6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.145ce1dc.js",
+    "static/css/2.070ffd8c.chunk.css",
+    "static/js/2.473420e6.chunk.js",
+    "static/css/main.091b867f.chunk.css",
+    "static/js/main.1b0cc07e.chunk.js"
+  ]
+}
